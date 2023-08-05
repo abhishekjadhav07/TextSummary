@@ -2,7 +2,7 @@ import "./App.css";
 import Navbar from "./components/Navbar";
 import TextForm from "./components/TextForm";
 import React, { useState } from "react";
-// import About from "./components/About";
+import About from "./components/About";
 
 function App() {
   const [mode, setmode] = useState("light");
@@ -12,7 +12,6 @@ function App() {
       setmode("dark");
       document.body.style.backgroundColor = "#212529";
       document.body.style.color = "white";
-      
     } else {
       setmode("light");
       document.body.style.backgroundColor = "white";
@@ -32,7 +31,7 @@ function App() {
         <TextForm heading="Enter the text to Analyze below:" />
       </div>
 
-      {/* <About /> */}
+      <About />
     </>
   );
 }
